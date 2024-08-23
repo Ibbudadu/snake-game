@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="difficulty-container">
+        <h2>Select Difficulty</h2>
+        <form id="difficultyForm">
+            <label>
+                <input type="radio" name="difficulty" value="easy" checked> Easy
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="intermediate"> Intermediate
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="hard"> Hard
+            </label>
+            <button type="button" id="startGame">Start Game</button>
+        </form>
+    </div>
+
+    <div class="game-container" style="display: none;">
+        <canvas id="gameCanvas"></canvas>
+        <div id="score">Score: 0</div>
+        <button id="restartGame" style="display: none;">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
